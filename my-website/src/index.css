@@ -77,7 +77,7 @@ section > h2 {
 }
 
 .text-light {
-  color: var(--color-primary);
+  color: var(--color-light);
 }
 
 a {
