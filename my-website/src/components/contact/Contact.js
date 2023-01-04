@@ -1,3 +1,3 @@
 export function Contact() {
-  return <div>Contact</div>;
+  return <section id="contact">Contact</section>;
 }

@@ -1,3 +1,3 @@
 export function Portfolio() {
-  return <div>Portfolio</div>;
+  return <section id="portfolio">Portfolio</section>;
 }
