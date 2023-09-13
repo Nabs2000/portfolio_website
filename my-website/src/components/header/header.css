@@ -41,7 +41,6 @@ header {
 /* PFP */
 
 .me {
-
   /*  MY EDITS */
   /* background: linear-gradient(var(--color-primary), transparent);
   width: 32rem;
@@ -77,13 +76,11 @@ header {
 }
 
 /* MEDIA QUERIES (MEDIUM DEVICES) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   .container {
     height: 68vh;
   }
 }
-
-
 
 /* MEDIA QUERIES (SMALL DEVICES) */
 
@@ -91,8 +88,8 @@ header {
   .container {
     height: 100vh;
   }
-  .header__socials, .scroll__down {
+  .header__socials,
+  .scroll__down {
     display: none;
-
   }
 }
