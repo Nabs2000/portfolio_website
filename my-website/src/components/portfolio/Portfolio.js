@@ -62,7 +62,7 @@ export function Portfolio() {
           return (
             <article key={id} className="portfolio__item">
               <div className="portfolio__item-image">
-                <img src={image} alt={title} />
+                <img className="portfolio__image" src={image} alt={title} />
                 <h3>{title}</h3>
                 <div className="portfolio__item-cta">
                   <a href={github} className="btn" target="_blank">
