@@ -18,27 +18,30 @@ const data = [
   {
     avatar: AVTR1,
     name: "Elisma Caffrey",
+    title: "System Test Engineering Manager, iRhythm Technologies",
     review:
-      "Lorem balhlshglashglhadlghaLorem balhlshglashglhadlghaLoreLorem balhlshglashglhadlghaLorem balhlshglashglhadlghaLoreLorem balhlshglashglhadlghaLorem balhlshglashglhadlghaLoreLorem balhlshglashglhadlghaLorem balhlshglashglhadlghaLoreLorem balhlshglashglhadlghaLorem balhlshglashglhadlghaLoreLorem balhlshglashglhadlghaLorem balhlshglashglhadlghaLoreLorem balhlshglashglhadlghaLorem balhlshglashglhadlghaLore",
+      "Nabeel has been proactive, resourceful, and collaborative. He proactively wrote Python scripts to automate test cases and manage test artifacts. Nabeel was also resourceful in implementing a Monte Carlo simulation of the device battery model in ython. Nabeel applied team best practices to develop well-documented, tested, and reviewed code. Lastly, Nabeel's collaboration in preparing devices for test, onboarding additional team members, and assisting wherever possible, makes him an excellent team player. Based on the skills I've witnessed while working with Nabeel, I am confident in his capability to excel in his endeavors.",
   },
   {
     avatar: AVTR2,
     name: "Dilveen Goraya",
+    title: "Senior System Engineer, iRhythm Technologies",
     review:
-      "Lorem balhlshglashglhadlghaLorem balhlshglashglhadlghaLoreLorem balhlshglashglhadlghaLorem balhlshglashglhadlghaLoreLorem balhlshglashglhadlghaLorem balhlshglashglhadlghaLoreLorem balhlshglashglhadlghaLorem balhlshglashglhadlghaLoreLorem balhlshglashglhadlghaLorem balhlshglashglhadlghaLoreLorem balhlshglashglhadlghaLorem balhlshglashglhadlghaLoreLorem balhlshglashglhadlghaLorem balhlshglashglhadlghaLore",
+      "Nabeel is a talented and enthusiastic engineer. He takes care to deliver the highest quality in his work and to understand the crux of an issue before diving right in to ensure he considers all perspectives/design inputs when solving a problem. He is a great team-player and knows how to foster cross-functional relationships and involve the necessary parties in his work. He's a quick learner and I highly recommend him as he'd be a great asset to any team. It was a pleasure working with you, Nabeel, hope our paths cross again!",
   },
-  {
-    avatar: AVTR3,
-    name: "Mathias Alexander",
-    review:
-      "Lorem balhlshglashglhadlghaLorem balhlshglashglhadlghaLoreLorem balhlshglashglhadlghaLorem balhlshglashglhadlghaLoreLorem balhlshglashglhadlghaLorem balhlshglashglhadlghaLoreLorem balhlshglashglhadlghaLorem balhlshglashglhadlghaLoreLorem balhlshglashglhadlghaLorem balhlshglashglhadlghaLoreLorem balhlshglashglhadlghaLorem balhlshglashglhadlghaLoreLorem balhlshglashglhadlghaLorem balhlshglashglhadlghaLore",
-  },
+  // {
+  //   avatar: AVTR3,
+  //   name: "Mathias Alexander",
+  //   title: "System Engineer, iRhythm Technologies",
+  //   review:
+  //     "Lorem balhlshglashglhadlghaLorem balhlshglashglhadlghaLoreLorem balhlshglashglhadlghaLorem balhlshglashglhadlghaLoreLorem balhlshglashglhadlghaLorem balhlshglashglhadlghaLoreLorem balhlshglashglhadlghaLorem balhlshglashglhadlghaLoreLorem balhlshglashglhadlghaLorem balhlshglashglhadlghaLoreLorem balhlshglashglhadlghaLorem balhlshglashglhadlghaLoreLorem balhlshglashglhadlghaLorem balhlshglashglhadlghaLore",
+  // },
 ];
 
 export function Testimonials() {
   return (
     <section id="testimonials">
-      <h5>Review from clients</h5>
+      <h5>What Others Say</h5>
       <h2>Testimonials</h2>
 
       <Swiper
@@ -48,13 +51,14 @@ export function Testimonials() {
         slidesPerView={1}
         pagination={{ clickable: true }}
       >
-        {data.map(({ avatar, name, review }, index) => {
+        {data.map(({ avatar, name, title, review }, index) => {
           return (
             <SwiperSlide key={index} className="testimonial">
               <div className="client__avatar">
                 <img src={avatar} alt="" />
               </div>
               <h5 className="client__name">{name}</h5>
+              <h6 className="client__title">{title}</h6>
               <small className="client__review">{review}</small>
             </SwiperSlide>
           );

@@ -20,6 +20,9 @@
   user-select: none;
 }
 
+.client__title {
+  color: var(--color-light);
+}
 .client__review {
   color: var(--color-light);
   font-weight: 300;
