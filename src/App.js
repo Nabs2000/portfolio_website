@@ -15,8 +15,8 @@ export function App() {
       <Nav />
       <About />
       <Experiences />
-      <Skills />
       <Testimonials />
+      <Skills />
       <Portfolio />
       <Contact />
       <Footer />
