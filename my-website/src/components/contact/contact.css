@@ -1,6 +1,3 @@
-button {
-}
-
 .container.contact__container {
   width: 58%;
   display: grid;
@@ -44,6 +41,10 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+}
+
+form > button {
+  margin: auto;
 }
 
 input,
