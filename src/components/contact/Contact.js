@@ -48,7 +48,7 @@ export function Contact() {
           <article className="contact__option">
             <RiMessengerLine className="contact__option-icon" />
             <h4>Messenger</h4>
-            <h5>Nabeel Sabzwari</h5>
+            <h5>nabeel.sabzwari</h5>
             <a href="https://m.me/nabeel.sabzwari" target="_blank">
               Send a message
             </a>
@@ -56,7 +56,7 @@ export function Contact() {
           <article className="contact__option">
             <BsWhatsapp className="contact__option-icon" />
             <h4>WhatsApp</h4>
-            <h5>+123456789</h5>
+            <h5>+1 (408)-218-8885</h5>
             <a
               href="https://api.whatsapp.com/send?phone=14082188885"
               target="_blank"
