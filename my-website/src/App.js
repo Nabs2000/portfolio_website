@@ -6,7 +6,7 @@ import { Contact } from "./components/contact/Contact";
 import { Skills } from "./components/skills/Skills";
 import { Footer } from "./components/footer/Footer";
 import { Portfolio } from "./components/portfolio/Portfolio";
-import { Services } from "./components/services/Services";
+import { Experiences } from "./components/experiences/Experiences";
 import { Testimonials } from "./components/testimonials/Testimonials";
 export function App() {
   return (
@@ -15,7 +15,7 @@ export function App() {
       <Nav />
       <About />
       <Skills />
-      <Services />
+      <Experiences />
       <Portfolio />
       <Testimonials />
       <Contact />
