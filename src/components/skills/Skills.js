@@ -15,6 +15,20 @@ export function Skills() {
             <article className="skills__details">
               <BsPatchCheckFill className="skills__details-icon" />
               <div>
+                <h4>Pandas</h4>
+                <small className="text-light">Experienced</small>
+              </div>
+            </article>
+            <article className="skills__details">
+              <BsPatchCheckFill className="skills__details-icon" />
+              <div>
+                <h4>Numpy</h4>
+                <small className="text-light">Experienced</small>
+              </div>
+            </article>
+            <article className="skills__details">
+              <BsPatchCheckFill className="skills__details-icon" />
+              <div>
                 <h4>React</h4>
                 <small className="text-light">Intermediate</small>
               </div>
@@ -33,27 +47,6 @@ export function Skills() {
                 <small className="text-light">Intermediate</small>
               </div>
             </article>
-            <article className="skills__details">
-              <BsPatchCheckFill className="skills__details-icon" />
-              <div>
-                <h4>Pandas</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-            <article className="skills__details">
-              <BsPatchCheckFill className="skills__details-icon" />
-              <div>
-                <h4>Numpy</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-            <article className="skills__details">
-              <BsPatchCheckFill className="skills__details-icon" />
-              <div>
-                <h4>Splunk</h4>
-                <small className="text-light">Intermediate</small>
-              </div>
-            </article>
           </div>
         </div>
         <div className="skills__langs">
@@ -63,6 +56,13 @@ export function Skills() {
               <BsPatchCheckFill className="skills__details-icon" />
               <div>
                 <h4>Python</h4>
+                <small className="text-light">Experienced</small>
+              </div>
+            </article>
+            <article className="skills__details">
+              <BsPatchCheckFill className="skills__details-icon" />
+              <div>
+                <h4>Git</h4>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
@@ -90,8 +90,8 @@ export function Skills() {
             <article className="skills__details">
               <BsPatchCheckFill className="skills__details-icon" />
               <div>
-                <h4>Git</h4>
-                <small className="text-light">Experienced</small>
+                <h4>Splunk</h4>
+                <small className="text-light">Intermediate</small>
               </div>
             </article>
           </div>
