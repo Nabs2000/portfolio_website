@@ -35,7 +35,7 @@ const data = [
 export function Testimonials() {
   // Function to add a link to the "here" portion of the review
   const addLinkToReview = (review) => {
-    const linkUrl = "https://www.linkedin.com"; // Replace with your actual URL
+    const linkUrl = "https://linkedin.com/in/nabeel-sabzwari-899697167/"; // Replace with your actual URL
     const parts = review.split("here");
     return (
       <span>
