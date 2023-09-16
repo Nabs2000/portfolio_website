@@ -1,54 +1,54 @@
 import React from "react";
-import "./experience.css";
+import "./skills.css";
 import { BsPatchCheckFill } from "react-icons/bs";
 
-export function Experience() {
+export function Skills() {
   return (
-    <section id="experience">
+    <section id="skills">
       <h5>What I Know</h5>
       <h2>Skills</h2>
 
-      <div className="container experience__container">
-        <div className="experience__libs">
+      <div className="container skills__container">
+        <div className="skills__libs">
           <h3>Frameworks</h3>
-          <div className="experience__content">
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
+          <div className="skills__content">
+            <article className="skills__details">
+              <BsPatchCheckFill className="skills__details-icon" />
               <div>
                 <h4>React</h4>
                 <small className="text-light">Intermediate</small>
               </div>
             </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
+            <article className="skills__details">
+              <BsPatchCheckFill className="skills__details-icon" />
               <div>
                 <h4>Flask</h4>
                 <small className="text-light">Intermediate</small>
               </div>
             </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
+            <article className="skills__details">
+              <BsPatchCheckFill className="skills__details-icon" />
               <div>
                 <h4>PyTorch</h4>
                 <small className="text-light">Intermediate</small>
               </div>
             </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
+            <article className="skills__details">
+              <BsPatchCheckFill className="skills__details-icon" />
               <div>
                 <h4>Pandas</h4>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
+            <article className="skills__details">
+              <BsPatchCheckFill className="skills__details-icon" />
               <div>
                 <h4>Numpy</h4>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
+            <article className="skills__details">
+              <BsPatchCheckFill className="skills__details-icon" />
               <div>
                 <h4>Splunk</h4>
                 <small className="text-light">Intermediate</small>
@@ -56,39 +56,39 @@ export function Experience() {
             </article>
           </div>
         </div>
-        <div className="experience__langs">
+        <div className="skills__langs">
           <h3>Languages and Tools</h3>
-          <div className="experience__content">
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
+          <div className="skills__content">
+            <article className="skills__details">
+              <BsPatchCheckFill className="skills__details-icon" />
               <div>
                 <h4>Python</h4>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
+            <article className="skills__details">
+              <BsPatchCheckFill className="skills__details-icon" />
               <div>
                 <h4>Java</h4>
                 <small className="text-light">Intermediate</small>
               </div>
             </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
+            <article className="skills__details">
+              <BsPatchCheckFill className="skills__details-icon" />
               <div>
                 <h4>Javascript</h4>
                 <small className="text-light">Intermediate</small>
               </div>
             </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
+            <article className="skills__details">
+              <BsPatchCheckFill className="skills__details-icon" />
               <div>
                 <h4>MATLAB</h4>
                 <small className="text-light">Intermediate</small>
               </div>
             </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
+            <article className="skills__details">
+              <BsPatchCheckFill className="skills__details-icon" />
               <div>
                 <h4>Git</h4>
                 <small className="text-light">Experienced</small>
