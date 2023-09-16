@@ -14,10 +14,10 @@ export function App() {
       <Header />
       <Nav />
       <About />
-      <Skills />
       <Experiences />
-      <Portfolio />
+      <Skills />
       <Testimonials />
+      <Portfolio />
       <Contact />
       <Footer />
     </>
