@@ -20,32 +20,38 @@ const data = [
     name: "Elisma Caffrey",
     title: "System Test Engineering Manager, iRhythm Technologies",
     review:
-      "It is my pleasure to recommend Nabeel Sabzwari after directly supervising him during his 8-month system engineering co-op at iRhythm Technologies. Nabeel has been proactive, resourceful, and collaborative. Nabeel joined our test effort for a wearable cardiac monitoring device and quickly learned the device configuration, test setup, and data analysis for the device. Nabeel proactively wrote python scripts to automate test cases and manage test artifacts. For example, with one script Nabeel enabled users to analyze pre-recorded data for current measurements in regions of interest. With another script, Nabeel controlled an ECG simulator to autonomously test arrhythmia transmissions. Nabeel was resourceful in implementing a Monte Carlo simulation of the device battery model in python. He studied the input characteristics to define an architecture that accounted for baseline power consumption, statistical distributions, and functional states. Nabeel applied team best practices to develop well-documented, tested, and reviewed code. Lastly, Nabeel's collaboration in preparing devices for test, onboarding additional team members, and assisting wherever possible, makes him an excellent team player. Based on the skills I've witnessed while working with Nabeel, I am confident in his capability to excel in his endeavors.",
+      "...Nabeel has been proactive, resourceful, and collaborative... (full recommendation on Linkedin here)",
   },
   {
     avatar: AVTR2,
     name: "Dilveen Goraya",
     title: "Senior System Engineer, iRhythm Technologies",
     review:
-      "Nabeel is a talented and enthusiastic engineer. He takes care to deliver the highest quality in his work and to understand the crux of an issue before diving right in to ensure he considers all perspectives/design inputs when solving a problem. He is a great team-player and knows how to foster cross-functional relationships and involve the necessary parties in his work. He's a quick learner and I highly recommend him as he'd be a great asset to any team. It was a pleasure working with you, Nabeel, hope our paths cross again!",
+      "Nabeel is a talented and enthusiastic engineer... (full recommendation on Linkedin here)",
   },
-  // {
-  //   avatar: AVTR3,
-  //   name: "Mathias Alexander",
-  //   title: "System Engineer, iRhythm Technologies",
-  //   review:
-  //     "Lorem balhlshglashglhadlghaLorem balhlshglashglhadlghaLoreLorem balhlshglashglhadlghaLorem balhlshglashglhadlghaLoreLorem balhlshglashglhadlghaLorem balhlshglashglhadlghaLoreLorem balhlshglashglhadlghaLorem balhlshglashglhadlghaLoreLorem balhlshglashglhadlghaLorem balhlshglashglhadlghaLoreLorem balhlshglashglhadlghaLorem balhlshglashglhadlghaLoreLorem balhlshglashglhadlghaLorem balhlshglashglhadlghaLore",
-  // },
+  // ... (other data objects)
 ];
 
 export function Testimonials() {
+  // Function to add a link to the "here" portion of the review
+  const addLinkToReview = (review) => {
+    const linkUrl = "https://www.linkedin.com"; // Replace with your actual URL
+    const parts = review.split("here");
+    return (
+      <span>
+        {parts[0]} <a href={linkUrl}>here</a>
+        {parts[1]}
+      </span>
+    );
+  };
+
   return (
     <section id="testimonials">
       <h5>What Others Say</h5>
       <h2>Testimonials</h2>
 
       <Swiper
-        className="container testimonials__container" // install Swiper modules
+        className="container testimonials__container"
         modules={[Pagination]}
         spaceBetween={40}
         slidesPerView={1}
@@ -59,7 +65,9 @@ export function Testimonials() {
               </div>
               <h5 className="client__name">{name}</h5>
               <h6 className="client__title">{title}</h6>
-              <small className="client__review">{review}</small>
+              <small className="client__review">
+                {addLinkToReview(review)}
+              </small>
             </SwiperSlide>
           );
         })}
