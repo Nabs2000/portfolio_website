@@ -24,18 +24,18 @@ export function Nav() {
         <AiOutlineUser />
       </a>
       <a
-        href="#skills"
-        className={activeNav === "#skills" ? "active" : ""}
-        onClick={() => setActiveNav("#skills")}
-      >
-        <BsCardChecklist />
-      </a>
-      <a
         href="#experiences"
         className={activeNav === "#experiences" ? "active" : ""}
         onClick={() => setActiveNav("#experiences")}
       >
         <MdWorkOutline />
+      </a>
+      <a
+        href="#skills"
+        className={activeNav === "#skills" ? "active" : ""}
+        onClick={() => setActiveNav("#skills")}
+      >
+        <BsCardChecklist />
       </a>
       <a
         href="#contact"
