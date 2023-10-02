@@ -53,7 +53,7 @@ export function Contact() {
               Send a message
             </a>
           </article>
-          <article className="contact__option">
+          {/* <article className="contact__option">
             <BsWhatsapp className="contact__option-icon" />
             <h4>WhatsApp</h4>
             <h5>+1 (408)-218-8885</h5>
@@ -63,7 +63,7 @@ export function Contact() {
             >
               Send a message
             </a>
-          </article>
+          </article> */}
         </div>
         {/* END OF CONTACT OPTIONS */}
         <form ref={form} onSubmit={sendEmail}>
