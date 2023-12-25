@@ -1,7 +1,7 @@
 import React from "react";
 import "./testimonials.css";
 import AVTR1 from "../../assets/avatar1.png";
-// import AVTR2 from "../../assets/avatar2.png";
+import AVTR2 from "../../assets/avatar2.png";
 import AVTR3 from "../../assets/avatar3.png";
 
 // avatars obtained from here: https://nice-avatar.dapi.to/
@@ -22,13 +22,13 @@ const data = [
     review:
       "...Nabeel has been proactive, resourceful, and collaborative... (full recommendation on Linkedin here)",
   },
-  // {
-  //   avatar: AVTR2,
-  //   name: "Dilveen Goraya",
-  //   title: "Senior System Engineer, iRhythm Technologies",
-  //   review:
-  //     "Nabeel is a talented and enthusiastic engineer... (full recommendation on Linkedin here)",
-  // },
+  {
+    avatar: AVTR2,
+    name: "Dilveen Goraya",
+    title: "Senior System Engineer, iRhythm Technologies",
+    review:
+      "Nabeel is a talented and enthusiastic engineer... (full recommendation on Linkedin here)",
+  },
   {
     avatar: AVTR3,
     name: "Mathias Alexander",
