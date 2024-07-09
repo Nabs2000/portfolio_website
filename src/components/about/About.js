@@ -13,9 +13,10 @@ export function About() {
         <div className="about__content">
           <p>
             Hi there! My name is Nabeel Sabzwari, and I am a master's student at
-            UC Davis majoring in computer science. I am currently seeking a
-            software engineering internship to contribute to company objectives
-            while nurturing my own passion for problem-solving and innovation.
+            UC Davis majoring in computer science. I am passionate about
+            building innovative solutions and problem-solving. I am always eager
+            to apply my skills in various opportunities, collaborate with
+            diverse teams, and contribute to meaningful projects.
           </p>
 
           <a href="#contact" className="btn btn-primary">
