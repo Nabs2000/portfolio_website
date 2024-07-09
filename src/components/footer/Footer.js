@@ -33,7 +33,7 @@ export function Footer() {
           <a href="#contact">Contact</a>
         </li>
       </ul>
-      <div className="footer__socials">
+      {/* <div className="footer__socials">
         <a href="https://facebook.com/nabeel.sabzwari">
           <FaFacebookF />
         </a>
@@ -43,7 +43,7 @@ export function Footer() {
         <a href="https://twitter.com/Nabs2000000">
           <IoLogoTwitter />
         </a>
-      </div>
+      </div> */}
     </footer>
   );
 }
