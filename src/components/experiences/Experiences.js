@@ -9,7 +9,33 @@ export function Experiences() {
       <div className="container experiences__container">
         <article className="experience">
           <div className="experience__head">
-            <h3>iRhythm Technologies</h3>
+            <h3>Marcu Lab, UC Davis (03/2024 - 08/2024)</h3>
+          </div>
+
+          <ul className="experience__list">
+            <li>
+              <BiCheck className="experience__list-icon" />
+              <p>
+                Researched the integration of deep learning algorithms within
+                Dr. Laura Marcu’s research lab, enhancing the lab's capacity for
+                precise differentiation between malignant and benign tissue
+                during neurosurgical procedures.
+              </p>
+            </li>
+            <li>
+              <BiCheck className="experience__list-icon" />
+              <p>
+                Presented comprehensive findings on the application of machine
+                learning in FLIm-based brain surgery to the research team,
+                contributing to an interdisciplinary understanding and fostering
+                collaborative research efforts.
+              </p>
+            </li>
+          </ul>
+        </article>
+        <article className="experience">
+          <div className="experience__head">
+            <h3>iRhythm Technologies (01/2023 - 09/2023)</h3>
           </div>
 
           <ul className="experience__list">
@@ -45,7 +71,7 @@ export function Experiences() {
         </article>
         <article className="experience">
           <div className="experience__head">
-            <h3>Xtrava Health</h3>
+            <h3>Xtrava Health (06/2022 - 09/2022)</h3>
           </div>
 
           <ul className="experience__list">
@@ -62,30 +88,6 @@ export function Experiences() {
               <p>
                 Implemented scripts in Python to visualize and pinpoint areas of
                 improvement in Xtrava's COVID-19 detection algorithm.
-              </p>
-            </li>
-          </ul>
-        </article>
-        <article className="experience">
-          <div className="experience__head">
-            <h3>Nanotechnology Lab, UC Berkeley</h3>
-          </div>
-
-          <ul className="experience__list">
-            <li>
-              <BiCheck className="experience__list-icon" />
-              <p>
-                Wrote a Python program for interactivity between a Raspberry Pi
-                and Arduino for a dialysis device in the lab of Dr. Waqas Khalid
-                through Berkeley’s URAP program.
-              </p>
-            </li>
-            <li>
-              <BiCheck className="experience__list-icon" />
-              <p>
-                Designed front-end Python code hosted on a Raspberry Pi using Qt
-                Creator to be utilized by doctors for a graphical user
-                interface.
               </p>
             </li>
           </ul>
