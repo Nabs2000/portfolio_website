@@ -1,0 +1,828 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nabeel Sabzwari - Computer Science Engineer & Researcher</title>
+    <meta name="description" content="Nabeel Sabzwari - Computer Science M.S. graduate specializing in Machine Learning, Bioinformatics, and Software Engineering. View my portfolio, projects, and experience.">
+    <meta name="keywords" content="Nabeel Sabzwari, Computer Science, Machine Learning, Bioinformatics, Software Engineer, Portfolio">
+    <meta name="author" content="Nabeel Sabzwari">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nabeelsabzwari.com/">
+    <meta property="og:title" content="Nabeel Sabzwari - Computer Science Engineer & Researcher">
+    <meta property="og:description" content="Portfolio showcasing expertise in Machine Learning, Bioinformatics, and Software Engineering.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Nabeel Sabzwari - Computer Science Engineer & Researcher">
+    <meta property="twitter:description" content="Portfolio showcasing expertise in Machine Learning, Bioinformatics, and Software Engineering.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                borderRadius: {
+                    lg: "var(--radius)",
+                    md: "calc(var(--radius) - 2px)",
+                    sm: "calc(var(--radius) - 4px)",
+                },
+                colors: {
+                    background: "var(--background)",
+                    foreground: "var(--foreground)",
+                    card: {
+                        DEFAULT: "var(--card)",
+                        foreground: "var(--card-foreground)",
+                    },
+                    popover: {
+                        DEFAULT: "var(--popover)",
+                        foreground: "var(--popover-foreground)",
+                    },
+                    primary: {
+                        DEFAULT: "var(--primary)",
+                        foreground: "var(--primary-foreground)",
+                    },
+                    secondary: {
+                        DEFAULT: "var(--secondary)",
+                        foreground: "var(--secondary-foreground)",
+                    },
+                    muted: {
+                        DEFAULT: "var(--muted)",
+                        foreground: "var(--muted-foreground)",
+                    },
+                    accent: {
+                        DEFAULT: "var(--accent)",
+                        foreground: "var(--accent-foreground)",
+                    },
+                    destructive: {
+                        DEFAULT: "var(--destructive)",
+                        foreground: "var(--destructive-foreground)",
+                    },
+                    border: "var(--border)",
+                    input: "var(--input)",
+                    ring: "var(--ring)",
+                },
+                fontFamily: {
+                    sans: ["Inter", "sans-serif"],
+                }
+            },
+        }
+    };
+    </script>
+    
+    <style>
+        :root {
+            --radius: 0.5rem;
+            --background: hsl(0 0% 100%);
+            --foreground: hsl(222.2 84% 4.9%);
+            --card: hsl(0 0% 100%);
+            --card-foreground: hsl(222.2 84% 4.9%);
+            --popover: hsl(0 0% 100%);
+            --popover-foreground: hsl(222.2 84% 4.9%);
+            --primary: hsl(222.2 47.4% 11.2%);
+            --primary-foreground: hsl(210 40% 98%);
+            --secondary: hsl(210 40% 96%);
+            --secondary-foreground: hsl(222.2 84% 4.9%);
+            --muted: hsl(210 40% 96%);
+            --muted-foreground: hsl(215.4 16.3% 46.9%);
+            --accent: hsl(210 40% 96%);
+            --accent-foreground: hsl(222.2 84% 4.9%);
+            --destructive: hsl(0 84.2% 60.2%);
+            --destructive-foreground: hsl(210 40% 98%);
+            --border: hsl(214.3 31.8% 91.4%);
+            --input: hsl(214.3 31.8% 91.4%);
+            --ring: hsl(222.2 84% 4.9%);
+        }
+
+        * {
+            scroll-behavior: smooth;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: hsl(217.2 91.2% 59.8%);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, hsl(222.2 47.4% 11.2%) 0%, hsl(217.2 91.2% 59.8%) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-background text-foreground font-sans">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border z-50 no-print">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-xl font-bold gradient-text">
+                    Nabeel Sabzwari
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-muted-foreground hover:text-foreground">Home</a>
+                    <a href="#about" class="nav-link text-muted-foreground hover:text-foreground">About</a>
+                    <a href="#experience" class="nav-link text-muted-foreground hover:text-foreground">Experience</a>
+                    <a href="#projects" class="nav-link text-muted-foreground hover:text-foreground">Projects</a>
+                    <a href="#education" class="nav-link text-muted-foreground hover:text-foreground">Education</a>
+                    <a href="#recommendations" class="nav-link text-muted-foreground hover:text-foreground">Recommendations</a>
+                    <a href="#contact" class="nav-link text-muted-foreground hover:text-foreground">Contact</a>
+                </div>
+                <button class="md:hidden text-foreground" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-border">
+                <div class="flex flex-col space-y-4 mt-4">
+                    <a href="#home" class="text-muted-foreground hover:text-foreground">Home</a>
+                    <a href="#about" class="text-muted-foreground hover:text-foreground">About</a>
+                    <a href="#experience" class="text-muted-foreground hover:text-foreground">Experience</a>
+                    <a href="#projects" class="text-muted-foreground hover:text-foreground">Projects</a>
+                    <a href="#education" class="text-muted-foreground hover:text-foreground">Education</a>
+                    <a href="#recommendations" class="text-muted-foreground hover:text-foreground">Recommendations</a>
+                    <a href="#contact" class="text-muted-foreground hover:text-foreground">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-20 min-h-screen flex items-center bg-gradient-to-br from-muted to-background">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center justify-between">
+                <div class="lg:w-1/2 mb-8 lg:mb-0">
+                    <div class="fade-in">
+                        <h1 class="text-4xl lg:text-6xl font-bold mb-4 gradient-text">
+                            Nabeel Sabzwari
+                        </h1>
+                        <h2 class="text-xl lg:text-2xl text-muted-foreground mb-6">
+                            Computer Science, M.S. • Machine Learning Researcher • Software Engineer
+                        </h2>
+                        <p class="text-lg text-muted-foreground mb-8 leading-relaxed">
+                            Passionate about developing innovative solutions at the intersection of machine learning, 
+                            bioinformatics, and software engineering. Experienced in building scalable systems and 
+                            conducting cutting-edge research.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="#contact" class="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors text-center">
+                                Get In Touch
+                            </a>
+                            <a href="#" onclick="downloadResume()" class="border border-border px-8 py-3 rounded-lg font-medium hover:bg-accent transition-colors text-center">
+                                <i class="fas fa-download mr-2"></i>Download Resume
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 flex justify-center">
+                    <div class="fade-in">
+                        <!-- Professional headshot placeholder -->
+                        <div class="w-80 h-80 bg-gradient-to-br from-primary to-blue-600 rounded-full flex items-center justify-center text-white text-6xl font-bold shadow-2xl">
+                            NS
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-background">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4">About Me</h2>
+                <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+                    A dedicated researcher and engineer with expertise in machine learning, bioinformatics, and software development.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="fade-in">
+                    <h3 class="text-2xl font-semibold mb-6">Background</h3>
+                    <p class="text-muted-foreground mb-4 leading-relaxed">
+                        Currently pursuing a Master's degree in Computer Science at UC Davis with a 3.7 GPA, I bring a unique 
+                        interdisciplinary perspective with my background in Bioengineering from UC Berkeley.
+                    </p>
+                    <p class="text-muted-foreground mb-4 leading-relaxed">
+                        My research experience spans genomic data analysis, deep learning for medical applications, and 
+                        automated bioinformatics pipelines. I've contributed to cutting-edge research in Dr. Megan Dennis's 
+                        and Dr. Laura Marcu's labs, processing terabytes of data and developing innovative ML solutions.
+                    </p>
+                    <p class="text-muted-foreground leading-relaxed">
+                        In industry, I've applied my skills at companies like iRhythm Technologies and Xtrava Health, 
+                        focusing on system engineering, automation, and data science applications in healthcare technology.
+                    </p>
+                </div>
+
+                <div class="fade-in">
+                    <h3 class="text-2xl font-semibold mb-6">Technical Skills</h3>
+                    
+                    <div class="mb-6">
+                        <h4 class="text-lg font-medium mb-3 text-primary">Programming Languages</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm">Python</span>
+                            <span class="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm">JavaScript</span>
+                            <span class="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm">TypeScript</span>
+                            <span class="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm">C/C++</span>
+                            <span class="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm">Java</span>
+                            <span class="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm">R</span>
+                            <span class="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm">SQL</span>
+                            <span class="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm">MATLAB</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <h4 class="text-lg font-medium mb-3 text-primary">Technologies & Frameworks</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm">PyTorch</span>
+                            <span class="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm">TensorFlow</span>
+                            <span class="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm">React.js</span>
+                            <span class="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm">Next.js</span>
+                            <span class="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm">AWS</span>
+                            <span class="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm">Docker</span>
+                            <span class="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm">LangChain</span>
+                            <span class="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm">Hugging Face</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="text-lg font-medium mb-3 text-primary">Specializations</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Machine Learning</span>
+                            <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Bioinformatics</span>
+                            <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Computer Vision</span>
+                            <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Data Analysis</span>
+                            <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">HPC</span>
+                            <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">RAG Systems</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-muted">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4">Professional Experience</h2>
+                <p class="text-xl text-muted-foreground">Building innovative solutions across research and industry</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <!-- Experience Item 1 -->
+                <div class="fade-in mb-12">
+                    <div class="bg-card rounded-lg p-8 shadow-lg card-hover border border-border">
+                        <div class="flex flex-col lg:flex-row lg:justify-between lg:items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-semibold text-primary">Software Engineering Researcher</h3>
+                                <p class="text-lg text-muted-foreground">University of California, Davis</p>
+                            </div>
+                            <div class="text-sm text-muted-foreground lg:text-right mt-2 lg:mt-0">
+                                <p>Davis, CA</p>
+                                <p>Nov 2024 - June 2025</p>
+                            </div>
+                        </div>
+                        <ul class="text-muted-foreground space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-chevron-right text-primary mt-1.5 mr-3 text-xs"></i>
+                                <span>Developed data analysis and visualization pipelines in Python and R on an HPC cluster in Dr. Megan Dennis's lab, processing 10+ TB of genomic data to extract actionable biological insights.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-chevron-right text-primary mt-1.5 mr-3 text-xs"></i>
+                                <span>Designed and deployed over 20 automated, data-processing pipelines with Snakemake, Bash scripting, and Slurm, significantly reducing manual effort and runtime variability.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-chevron-right text-primary mt-1.5 mr-3 text-xs"></i>
+                                <span>Integrated open-source tools containerized with Docker to ensure reproducibility and efficiency across diverse bioinformatics tasks within the genomic pipeline.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="fade-in mb-12">
+                    <div class="bg-card rounded-lg p-8 shadow-lg card-hover border border-border">
+                        <div class="flex flex-col lg:flex-row lg:justify-between lg:items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-semibold text-primary">Machine Learning Researcher</h3>
+                                <p class="text-lg text-muted-foreground">University of California, Davis</p>
+                            </div>
+                            <div class="text-sm text-muted-foreground lg:text-right mt-2 lg:mt-0">
+                                <p>Davis, CA</p>
+                                <p>Mar 2024 - Oct 2024</p>
+                            </div>
+                        </div>
+                        <ul class="text-muted-foreground space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-chevron-right text-primary mt-1.5 mr-3 text-xs"></i>
+                                <span>Developed, trained, and evaluated deep learning models (CNN, TCN) using TensorFlow in Dr. Laura Marcu's lab to predict clean fluorescence signals from noisy tumor data, looking at R² and domain-specific metrics for model validation.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-chevron-right text-primary mt-1.5 mr-3 text-xs"></i>
+                                <span>Ensured model robustness by performing a random hyperparameter search using Optuna and K-Fold cross-validation with a held-out test set for final model training.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-chevron-right text-primary mt-1.5 mr-3 text-xs"></i>
+                                <span>Synthesized findings into a lab-reviewed scientific report that generated interdisciplinary interest and initiated collaborative research efforts.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 3 -->
+                <div class="fade-in mb-12">
+                    <div class="bg-card rounded-lg p-8 shadow-lg card-hover border border-border">
+                        <div class="flex flex-col lg:flex-row lg:justify-between lg:items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-semibold text-primary">System Engineering Co-Op</h3>
+                                <p class="text-lg text-muted-foreground">iRhythm Technologies</p>
+                            </div>
+                            <div class="text-sm text-muted-foreground lg:text-right mt-2 lg:mt-0">
+                                <p>San Francisco, CA</p>
+                                <p>Jan 2023 - Sep 2023</p>
+                            </div>
+                        </div>
+                        <ul class="text-muted-foreground space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-chevron-right text-primary mt-1.5 mr-3 text-xs"></i>
+                                <span>Conducted over 20 system verification and validation tests for the Zio AT heart monitoring device, assessing BLE and cellular performance in varying coverage conditions by using DC power analyzers, oscilloscopes, and multimeters.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-chevron-right text-primary mt-1.5 mr-3 text-xs"></i>
+                                <span>Leveraged knowledge in Python, data structures, and serial communication to automate a test case, decreasing testing time by 80%.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-chevron-right text-primary mt-1.5 mr-3 text-xs"></i>
+                                <span>Designed and implemented a functional battery model for the heart monitoring device by creating a Python-based Monte Carlo simulation that more accurately represented field conditions, using Pytest for unit testing and adhering to SDLC practices.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 4 -->
+                <div class="fade-in">
+                    <div class="bg-card rounded-lg p-8 shadow-lg card-hover border border-border">
+                        <div class="flex flex-col lg:flex-row lg:justify-between lg:items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-semibold text-primary">Data Scientist Intern</h3>
+                                <p class="text-lg text-muted-foreground">Xtrava Health</p>
+                            </div>
+                            <div class="text-sm text-muted-foreground lg:text-right mt-2 lg:mt-0">
+                                <p>Santa Clara, CA</p>
+                                <p>June 2022 - Sep 2022</p>
+                            </div>
+                        </div>
+                        <ul class="text-muted-foreground space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-chevron-right text-primary mt-1.5 mr-3 text-xs"></i>
+                                <span>Deployed a parsing script to process raw data into a neat Excel spreadsheet from 500+ digital COVID-19 sensors using Python and MATLAB.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-chevron-right text-primary mt-1.5 mr-3 text-xs"></i>
+                                <span>Implemented and presented Python visualization scripts to pinpoint improvement in Xtrava's COVID-19 detection algorithm.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-background">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4">Featured Projects</h2>
+                <p class="text-xl text-muted-foreground">Innovative solutions spanning mobile development, machine learning, and AI applications</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="fade-in">
+                    <div class="bg-card rounded-lg overflow-hidden shadow-lg card-hover border border-border h-full">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                                    <i class="fas fa-mobile-alt text-primary text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-semibold">Broom Service</h3>
+                                    <p class="text-sm text-muted-foreground">July 2025 - Present</p>
+                                </div>
+                            </div>
+                            <p class="text-muted-foreground mb-4">
+                                Mobile-first house chore management app that automates task rotation, sends real-time reminders, and tracks completion for shared households.
+                            </p>
+                            <div class="mb-4">
+                                <h4 class="font-medium mb-2">Key Features:</h4>
+                                <ul class="text-sm text-muted-foreground space-y-1">
+                                    <li>• React Native frontend with Expo Go</li>
+                                    <li>• Push notifications & offline sync</li>
+                                    <li>• AWS Lambda & DynamoDB integration</li>
+                                    <li>• Dynamic task dashboards</li>
+                                </ul>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-accent text-accent-foreground px-2 py-1 rounded text-xs">React Native</span>
+                                <span class="bg-accent text-accent-foreground px-2 py-1 rounded text-xs">AWS</span>
+                                <span class="bg-accent text-accent-foreground px-2 py-1 rounded text-xs">DynamoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="fade-in">
+                    <div class="bg-card rounded-lg overflow-hidden shadow-lg card-hover border border-border h-full">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                                    <i class="fas fa-microscope text-primary text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-semibold">Skin Cancer Classification</h3>
+                                    <p class="text-sm text-muted-foreground">Mar 2025 - June 2025</p>
+                                </div>
+                            </div>
+                            <p class="text-muted-foreground mb-4">
+                                CNN-based computer vision pipeline to classify skin lesions and evaluate model bias across diverse skin tones.
+                            </p>
+                            <div class="mb-4">
+                                <h4 class="font-medium mb-2">Achievements:</h4>
+                                <ul class="text-sm text-muted-foreground space-y-1">
+                                    <li>• 91% within-one accuracy</li>
+                                    <li>• 75% precision, 72% recall</li>
+                                    <li>• Fine-tuned ResNet50 model</li>
+                                    <li>• StyleGAN2 data augmentation</li>
+                                </ul>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-accent text-accent-foreground px-2 py-1 rounded text-xs">PyTorch</span>
+                                <span class="bg-accent text-accent-foreground px-2 py-1 rounded text-xs">Computer Vision</span>
+                                <span class="bg-accent text-accent-foreground px-2 py-1 rounded text-xs">ResNet50</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="fade-in">
+                    <div class="bg-card rounded-lg overflow-hidden shadow-lg card-hover border border-border h-full">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                                    <i class="fas fa-robot text-primary text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-semibold">AI Medicinal Data Agent</h3>
+                                    <p class="text-sm text-muted-foreground">June 2024</p>
+                                </div>
+                            </div>
+                            <p class="text-muted-foreground mb-4">
+                                AI agent using RAG to analyze medicinal data from a 50k-entry CSV file and PDF documents for comprehensive insights.
+                            </p>
+                            <div class="mb-4">
+                                <h4 class="font-medium mb-2">Technologies:</h4>
+                                <ul class="text-sm text-muted-foreground space-y-1">
+                                    <li>• LlamaIndex for data retrieval</li>
+                                    <li>• OpenAI API (ChatGPT 3.5 turbo)</li>
+                                    <li>• Pandas for data processing</li>
+                                    <li>• RAG architecture</li>
+                                </ul>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-accent text-accent-foreground px-2 py-1 rounded text-xs">LlamaIndex</span>
+                                <span class="bg-accent text-accent-foreground px-2 py-1 rounded text-xs">RAG</span>
+                                <span class="bg-accent text-accent-foreground px-2 py-1 rounded text-xs">OpenAI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-muted">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4">Education</h2>
+                <p class="text-xl text-muted-foreground">Academic foundation in computer science and bioengineering</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                <!-- Master's Degree -->
+                <div class="fade-in">
+                    <div class="bg-card rounded-lg p-8 shadow-lg card-hover border border-border h-full">
+                        <div class="text-center mb-6">
+                            <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-graduation-cap text-primary text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-primary">Master of Science</h3>
+                            <p class="text-lg text-muted-foreground">Computer Science</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="font-medium">University of California, Davis</p>
+                            <p class="text-muted-foreground">Sep 2023 - June 2025</p>
+                            <p class="text-lg font-semibold text-primary mt-2">GPA: 3.7</p>
+                        </div>
+                        <div class="mt-6">
+                            <h4 class="font-medium mb-3">Relevant Coursework:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm">Probability Models for Computer Science</span>
+                                <span class="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm">Machine Learning and Discovery</span>
+                                <span class="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm">Genomics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bachelor's Degree -->
+                <div class="fade-in">
+                    <div class="bg-card rounded-lg p-8 shadow-lg card-hover border border-border h-full">
+                        <div class="text-center mb-6">
+                            <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-graduation-cap text-primary text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-primary">Bachelor of Science</h3>
+                            <p class="text-lg text-muted-foreground">Bioengineering</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="font-medium">University of California, Berkeley</p>
+                            <p class="text-muted-foreground">Aug 2020 - Dec 2022</p>
+                            <p class="text-lg font-semibold text-primary mt-2">GPA: 3.8</p>
+                        </div>
+                        <div class="mt-6">
+                            <h4 class="font-medium mb-3">Relevant Coursework:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm">Python Fundamentals</span>
+                                <span class="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm">Data Structures and Algorithms</span>
+                                <span class="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm">Data Science</span>
+                                <span class="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm">Robotics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendations Section -->
+    <section id="recommendations" class="py-20 bg-background">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4">Recommendations</h2>
+                <p class="text-xl text-muted-foreground">What colleagues and mentors say about my work</p>
+            </div>
+
+            <div class="max-w-6xl mx-auto">
+                <p class="text-center text-muted-foreground mb-8">
+                    For detailed LinkedIn recommendations and endorsements, please visit my 
+                    <a href="https://www.linkedin.com/in/nabeel-sabzwari/" target="_blank" class="text-primary hover:underline font-medium">
+                        LinkedIn profile <i class="fas fa-external-link-alt ml-1 text-xs"></i>
+                    </a>
+                </p>
+
+                <!-- Placeholder recommendation cards -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="fade-in">
+                        <div class="bg-card rounded-lg p-6 shadow-lg border border-border h-full">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-user text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Research Supervisor</h4>
+                                    <p class="text-sm text-muted-foreground">UC Davis</p>
+                                </div>
+                            </div>
+                            <blockquote class="text-muted-foreground italic">
+                                "Exceptional research capabilities in genomic data analysis and machine learning applications."
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <div class="fade-in">
+                        <div class="bg-card rounded-lg p-6 shadow-lg border border-border h-full">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-user text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Engineering Manager</h4>
+                                    <p class="text-sm text-muted-foreground">iRhythm Technologies</p>
+                                </div>
+                            </div>
+                            <blockquote class="text-muted-foreground italic">
+                                "Outstanding automation skills and system engineering expertise that significantly improved our testing processes."
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <div class="fade-in">
+                        <div class="bg-card rounded-lg p-6 shadow-lg border border-border h-full">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-user text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Lab Colleague</h4>
+                                    <p class="text-sm text-muted-foreground">UC Davis</p>
+                                </div>
+                            </div>
+                            <blockquote class="text-muted-foreground italic">
+                                "Collaborative team player with deep technical expertise in bioinformatics and data science."
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-muted">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4">Get In Touch</h2>
+                <p class="text-xl text-muted-foreground">Let's connect and discuss opportunities</p>
+            </div>
+
+            <div class="max-w-2xl mx-auto">
+                <div class="grid sm:grid-cols-2 gap-8 mb-12">
+                    <div class="fade-in">
+                        <div class="bg-card rounded-lg p-6 shadow-lg border border-border text-center card-hover">
+                            <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-envelope text-primary text-2xl"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold mb-2">Email</h3>
+                            <a href="mailto:nabeelsabz101@gmail.com" class="text-primary hover:underline">
+                                nabeelsabz101@gmail.com
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="fade-in">
+                        <div class="bg-card rounded-lg p-6 shadow-lg border border-border text-center card-hover">
+                            <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-phone text-primary text-2xl"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold mb-2">Phone</h3>
+                            <a href="tel:+14082188885" class="text-primary hover:underline">
+                                (408) 218-8885
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center fade-in">
+                    <div class="flex justify-center space-x-6">
+                        <a href="https://www.linkedin.com/in/nabeel-sabzwari/" target="_blank" 
+                           class="bg-primary text-primary-foreground p-4 rounded-full hover:bg-primary/90 transition-colors">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                        <a href="mailto:nabeelsabz101@gmail.com" 
+                           class="bg-primary text-primary-foreground p-4 rounded-full hover:bg-primary/90 transition-colors">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-background border-t border-border py-8 no-print">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-muted-foreground">
+                © 2025 Nabeel Sabzwari. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Active navigation link
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        // Download resume function
+        function downloadResume() {
+            // TODO: Implement resume download functionality
+            // This would typically generate a PDF or download a pre-made resume file
+            alert('Resume download functionality will be implemented with a backend service.');
+        }
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Trigger initial fade-in for hero section
+            setTimeout(() => {
+                document.querySelector('#home .fade-in').classList.add('visible');
+            }, 100);
+        });
+    </script>
+</body>
+</html>
