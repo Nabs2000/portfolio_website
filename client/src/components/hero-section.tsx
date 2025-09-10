@@ -4,8 +4,14 @@ import profileImage from "@assets/pfp_1756785028398.jpeg";
 
 export default function HeroSection() {
   const downloadResume = () => {
-    // Request resume download from server
-    window.open('/api/resume/download', '_blank');
+    // Direct link to the resume in the public directory
+    const resumeUrl = '/Nabeel_Sabzwari_Resume.pdf';
+    const link = document.createElement('a');
+    link.href = resumeUrl;
+    link.download = 'Nabeel_Sabzwari_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   const scrollToContact = () => {
