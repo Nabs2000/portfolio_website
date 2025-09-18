@@ -1,5 +1,10 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const sourceFile = path.join(__dirname, '../attached_assets/Nabeel_Sabzwari_Resume_1756783957474.pdf');
 const destFile = path.join(__dirname, '../public/Nabeel_Sabzwari_Resume.pdf');
