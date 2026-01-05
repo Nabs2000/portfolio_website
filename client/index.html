@@ -7,18 +7,34 @@
     <meta name="description" content="Nabeel Sabzwari - Computer Science M.S. graduate specializing in Machine Learning, Bioinformatics, and Software Engineering. View my portfolio, projects, and experience.">
     <meta name="keywords" content="Nabeel Sabzwari, Computer Science, Machine Learning, Bioinformatics, Software Engineer, Portfolio">
     <meta name="author" content="Nabeel Sabzwari">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://nabeelsabzwari.com/">
+    <meta property="og:url" content="https://nabs2000.github.io/portfolio_website/">
     <meta property="og:title" content="Nabeel Sabzwari - Computer Science Engineer & Researcher">
     <meta property="og:description" content="Portfolio showcasing expertise in Machine Learning, Bioinformatics, and Software Engineering.">
-    
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:title" content="Nabeel Sabzwari - Computer Science Engineer & Researcher">
     <meta property="twitter:description" content="Portfolio showcasing expertise in Machine Learning, Bioinformatics, and Software Engineering.">
-    
+
+    <!-- GitHub Pages SPA redirect script -->
+    <script>
+      // Single Page Apps for GitHub Pages
+      // https://github.com/rafgraph/spa-github-pages
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) {
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -26,7 +42,5 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
-    <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js"></script>
   </body>
 </html>
