@@ -3,8 +3,8 @@ import { Download, Mail } from "lucide-react";
 
 export default function HeroSection() {
   const downloadResume = () => {
-    // Direct link to the resume in the public directory
-    const resumeUrl = '/Nabeel_Sabzwari_Resume.pdf';
+    // Use base URL for GitHub Pages compatibility
+    const resumeUrl = `${import.meta.env.BASE_URL}Nabeel_Sabzwari_Resume.pdf`;
     const link = document.createElement('a');
     link.href = resumeUrl;
     link.download = 'Nabeel_Sabzwari_Resume.pdf';
@@ -58,7 +58,7 @@ export default function HeroSection() {
             <div className="fade-in">
               <div className="w-80 h-80 rounded-full overflow-hidden shadow-2xl ring-4 ring-primary/20">
                 <img
-                  src="/profile.jpeg"
+                  src={`${import.meta.env.BASE_URL}profile.jpeg`}
                   alt="Nabeel Sabzwari"
                   className="w-full h-full object-cover"
                   data-testid="hero-avatar"
