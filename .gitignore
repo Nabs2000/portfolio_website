@@ -1,7 +1,28 @@
+# Dependencies
 node_modules
+
+# Build output
 dist
+
+# OS files
 .DS_Store
-server/public
-vite.config.ts.*
-*.tar.gz
+
+# Old Replit files
+.replit
+.local
+replit.md
+attached_assets
+
+# Old server files
+server
+shared
+scripts
+drizzle.config.ts
+
+# Vercel
 .vercel
+vercel.json
+
+# Misc
+*.tar.gz
+vite.config.ts.*

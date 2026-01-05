@@ -1,58 +1,159 @@
 # Nabeel Sabzwari Portfolio
 
-## Overview
+A modern, responsive portfolio website showcasing professional experience, projects, education, and skills. Built with React, TypeScript, and Tailwind CSS.
 
-This is a professional portfolio website for Nabeel Sabzwari, a Computer Science M.S. graduate specializing in Machine Learning, Bioinformatics, and Software Engineering. The application is built as a single-page React application with a Node.js/Express backend, showcasing his professional experience, projects, education, and skills through a modern, responsive interface.
+## Live Site
 
-## User Preferences
+Visit the portfolio at: [https://nabs2000.github.io/portfolio_website/](https://nabs2000.github.io/portfolio_website/)
 
-Preferred communication style: Simple, everyday language.
+## Features
 
-## System Architecture
+- **Modern UI**: Clean, professional design with smooth animations
+- **Responsive**: Fully responsive layout that works on all devices
+- **Sections**:
+  - Hero section with profile image and call-to-action
+  - About section with background and technical skills
+  - Professional experience with detailed responsibilities
+  - Projects showcase
+  - Education history
+  - Recommendations
+  - Contact information
+- **Interactive Elements**: Smooth scrolling, fade-in animations, and hover effects
+- **Downloadable Resume**: One-click resume download functionality
 
-### Frontend Architecture
-- **Framework**: React with TypeScript using Vite as the build tool
-- **Routing**: Wouter for client-side routing (lightweight alternative to React Router)
-- **UI Components**: Shadcn/ui component library built on Radix UI primitives
-- **Styling**: Tailwind CSS with custom CSS variables for theming
-- **State Management**: TanStack Query for server state management
-- **Form Handling**: React Hook Form with Zod validation
+## Tech Stack
 
-### Backend Architecture
-- **Server Framework**: Express.js with TypeScript
-- **Module System**: ES modules (type: "module" in package.json)
-- **Development Setup**: tsx for TypeScript execution in development
-- **Build Process**: esbuild for server bundling, Vite for client bundling
-- **File Serving**: Static file serving with development hot reloading via Vite middleware
+- **Framework**: React 18 with TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **UI Components**: Radix UI primitives with custom styling
+- **Routing**: Wouter (lightweight client-side routing)
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
 
-### Data Storage Solutions
-- **Database ORM**: Drizzle ORM configured for PostgreSQL
-- **Database Provider**: Neon serverless PostgreSQL (via @neondatabase/serverless)
-- **Migration System**: Drizzle Kit for database migrations
-- **Temporary Storage**: In-memory storage implementation for user data (MemStorage class)
-- **Session Management**: PostgreSQL session store with connect-pg-simple
+## Development
 
-### Authentication and Authorization
-- **Current Implementation**: Basic user schema with username/password fields
-- **Session Storage**: PostgreSQL-backed sessions
-- **Validation**: Zod schemas for input validation
-- **Security**: Prepared for authentication implementation with user storage interface
+### Prerequisites
 
-### Application Structure
-- **Client Directory**: Contains all React frontend code and components
-- **Server Directory**: Express server implementation and API routes  
-- **Shared Directory**: Common schemas and types used by both client and server
-- **Component Organization**: Modular section-based components (Hero, About, Experience, Projects, etc.)
+- Node.js 20 or higher
+- npm
 
-### Key Features
-- **Resume Download**: API endpoint for serving PDF resume files
-- **Responsive Design**: Mobile-first approach with Tailwind CSS
-- **SEO Optimization**: Meta tags and semantic HTML structure
-- **Development Tools**: Error overlay and hot reloading in development
-- **Accessibility**: ARIA labels and semantic markup throughout
+### Installation
 
-### Build and Deployment
-- **Development**: Concurrent client and server development with Vite HMR
-- **Production Build**: Separate client and server builds with static file serving
-- **Asset Management**: Attached assets directory for static files like resume PDFs
-- **Environment Configuration**: Environment-based configuration for database and development tools
+```bash
+# Clone the repository
+git clone https://github.com/Nabs2000/portfolio_website.git
+cd portfolio_website
+
+# Install dependencies
+npm install
+```
+
+### Running Locally
+
+```bash
+# Start the development server
+npm run dev
+```
+
+The site will be available at `http://localhost:5173`
+
+### Building for Production
+
+```bash
+# Build the project
+npm run build
+
+# Preview the production build
+npm run preview
+```
+
+## Deployment
+
+### Automatic Deployment (Recommended)
+
+The site automatically deploys to GitHub Pages when you push to the `main` branch using GitHub Actions.
+
+1. Push your changes to the main branch
+2. GitHub Actions will automatically build and deploy the site
+3. Your site will be live at `https://nabs2000.github.io/portfolio_website/`
+
+### Manual Deployment
+
+If you prefer to deploy manually:
+
+```bash
+npm run deploy
+```
+
+This will build the project and push it to the `gh-pages` branch.
+
+### GitHub Pages Setup
+
+To enable GitHub Pages for your repository:
+
+1. Go to your repository settings on GitHub
+2. Navigate to "Pages" in the left sidebar
+3. Under "Build and deployment":
+   - **Source**: Select "GitHub Actions"
+4. Save the settings
+
+The site will be deployed automatically on the next push to the main branch.
+
+## Project Structure
+
+```
+portfolio_website/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml          # GitHub Actions workflow
+├── client/
+│   ├── src/
+│   │   ├── components/         # React components
+│   │   ├── hooks/              # Custom React hooks
+│   │   ├── lib/                # Utility functions
+│   │   ├── pages/              # Page components
+│   │   ├── App.tsx             # Main app component
+│   │   └── index.css           # Global styles
+│   └── index.html              # HTML template
+├── public/
+│   ├── profile.jpeg            # Profile image
+│   └── Nabeel_Sabzwari_Resume.pdf  # Resume PDF
+├── package.json                # Dependencies and scripts
+├── vite.config.ts              # Vite configuration
+├── tailwind.config.ts          # Tailwind CSS configuration
+└── tsconfig.json               # TypeScript configuration
+```
+
+## Customization
+
+### Updating Content
+
+To update the portfolio content, edit the respective component files in `client/src/components/`:
+
+- `hero-section.tsx` - Name, title, and introduction
+- `about-section.tsx` - Background and skills
+- `experience-section.tsx` - Work experience
+- `projects-section.tsx` - Project showcase
+- `education-section.tsx` - Educational background
+- `recommendations-section.tsx` - Testimonials
+- `contact-section.tsx` - Contact information
+
+### Updating Profile Image
+
+Replace `public/profile.jpeg` with your own image.
+
+### Updating Resume
+
+Replace `public/Nabeel_Sabzwari_Resume.pdf` with your own resume PDF.
+
+## License
+
+MIT
+
+## Contact
+
+Nabeel Sabzwari
+- Email: nsabzwari@ucdavis.edu
+- LinkedIn: [linkedin.com/in/nabeel-sabzwari](https://linkedin.com/in/nabeel-sabzwari)
+- GitHub: [github.com/Nabs2000](https://github.com/Nabs2000)

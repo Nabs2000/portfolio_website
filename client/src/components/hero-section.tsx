@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Download, Mail } from "lucide-react";
-import profileImage from "@assets/pfp_1756785028398.jpeg";
 
 export default function HeroSection() {
   const downloadResume = () => {
@@ -58,8 +57,8 @@ export default function HeroSection() {
           <div className="lg:w-1/2 flex justify-center">
             <div className="fade-in">
               <div className="w-80 h-80 rounded-full overflow-hidden shadow-2xl ring-4 ring-primary/20">
-                <img 
-                  src={profileImage}
+                <img
+                  src="/profile.jpeg"
                   alt="Nabeel Sabzwari"
                   className="w-full h-full object-cover"
                   data-testid="hero-avatar"
